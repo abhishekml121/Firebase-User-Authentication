@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Auth</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script src="https://unpkg.com/lodash@4.17.20"></script>
+</head>
+<body>
+	<main>
+		<section class="form_sectoion" style="display:none;">
+			<header>
+			<h1>User Authentication</h1>
+			</header>
+			<div class="reg_form_div show_reg_anim">
+				<form id="reg">
+					<h1 class="head_f">Sign-up Form</h1>
+					<div class="error reg_error"></div>
+
+					<div>
+					<label for="name">Your Name
+					</label>
+						<input type="text" name="name" id="name" required>
+					</div>
+
+					<div>
+					<label for="r_email">Email
+					</label>
+						<input type="email" name="email" id="r_email" class="email" required>
+					</div>
+
+					<div>
+					<label for="r_password">Password
+					</label>
+						<input type="password" name="password" id="r_password" class="password" required>
+					</div>
+
+					<div class="submit_btn">
+						<button class="btn reg_btn">SIGN UP</button>
+					</div>
+					<div class="aleardy_member">
+						Or login here
+					</div>
+
+				</form>
+			</div>
+
+			<div class="login_form_div hide_login_anim" style="display: none;">
+				<form id="login">
+					<h1 class="head_f">Login Form</h1>
+					<div class="error login_error"></div>
+
+					<div>
+					<label for="l_email">Email
+					</label>
+					<input type="email" name="email" id="l_email" class="email" required>
+					</div>
+
+					<div>
+					<label for="l_password">Password
+					</label>
+						<input type="password" name="password" id="l_password" class="password" required>
+					</div>
+					<div class="forget_paswd">
+						forgot password
+					</div>
+
+					<div class="submit_btn">
+						<button class="btn login_btn">LOGIN</button>
+					</div>
+
+					<div class="reg_show">
+						Or sign up here
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="welcome" style="display:none;">
+			<h1>WELCOME <span class="username"></span> !</h1>
+			<div class="welcome_message">You have successfully loged in !</div>
+			<div class="logout_div">
+				<button class="btn logout">LOGOUT</button>
+			</div>
+			<div class="error welcome_error"></div>
+		</section>
+		
+	</main>
+
+	<script type="module" src="./js/firebase.js"></script>
+	<script type="module" src="./js/main.js"></script>
+</body>
+</html>

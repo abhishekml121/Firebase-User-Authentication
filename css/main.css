@@ -1,0 +1,114 @@
+.btn{
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.error{
+	color: red;
+	font-size: 1.2em;
+}
+
+label{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+input{
+	font-size: 1.4em;
+	padding: 5px;
+}
+
+.login_form_div, .reg_form_div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.6s;
+}
+
+.login_form_div{
+	transform: scale(0.6);
+}
+
+.login_form_div.show_login_anim{
+	transform: scale(1.0);
+	opacity: 1;
+	transition: all 0.6s;
+
+}
+.login_form_div.hide_login_anim{
+	transform: scale(0.6);
+	opacity: 0;
+}
+
+.reg_form_div.show_reg_anim{
+	transform: scale(1.0);
+	opacity: 1;
+}
+.reg_form_div.hide_reg_anim{
+	transform: scale(0.6);
+	opacity: 0;
+}
+
+.head_f{
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 55px;
+}
+#login > div, #reg > div{
+	margin-bottom: 25px;
+}
+
+.submit_btn{
+	text-align: center;
+}
+.submit_btn .btn{
+	font-size: 1.1em;
+	padding: 10px 25px;
+	cursor: pointer;
+}
+
+header h1{
+	font-size: 3em;
+	text-align: center;
+}
+
+form{
+	box-shadow: 0px 10px 10px -10px #959595;
+	padding: 10px 80px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forget_paswd{
+	align-self: end;
+}
+
+.aleardy_member, .reg_show{
+	text-align: center;
+}
+
+.aleardy_member, .forget_paswd, .reg_show{
+	color: blue;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.welcome{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 10px 10px -10px #959595;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.welcome_message{
+	color: green;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+
+.username{
+	color: green;
+}
